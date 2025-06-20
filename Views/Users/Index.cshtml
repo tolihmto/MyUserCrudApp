@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<UserCrudApp.Models.User>
+
+<h1>Liste des utilisateurs</h1>
+
+<a asp-action="Create">Créer un nouvel utilisateur</a>
+
+<table class="table">
+    <thead>
+        <tr><th>Nom</th><th>Email</th><th></th></tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@user.Id">Modifier</a> |
+                    <a asp-action="Details" asp-route-id="@user.Id">Détails</a> |
+                    <a asp-action="Delete" asp-route-id="@user.Id">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

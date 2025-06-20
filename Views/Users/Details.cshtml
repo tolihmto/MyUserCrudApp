@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model UserCrudApp.Models.User
+
+<h1>Détails de l'utilisateur</h1>
+
+<div>
+    <h4>Nom :</h4>
+    <p>@Model.Name</p>
+
+    <h4>Email :</h4>
+    <p>@Model.Email</p>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Modifier</a>
+<a asp-action="Index" class="btn btn-secondary">Retour à la liste</a>
