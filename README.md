@@ -1,4 +1,4 @@
-# UserCrudApp 👤📋
+# MyUserCrudApp 👤📋
 
 Une application web ASP.NET Core MVC permettant de **gérer une liste d'utilisateurs** via des opérations CRUD :
 
