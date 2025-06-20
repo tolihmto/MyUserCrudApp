@@ -32,8 +32,8 @@ Une application web ASP.NET Core MVC permettant de **gérer une liste d'utilisat
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/ton-utilisateur/UserCrudApp.git
-cd UserCrudApp
+git clone https://github.com/ton-utilisateur/MyUserCrudApp.git
+cd MyUserCrudApp
 ```
 
 ### 2. Restaurer les dépendances
